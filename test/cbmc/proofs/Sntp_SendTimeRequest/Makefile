@@ -15,7 +15,7 @@ MAX_NO_OF_SERVERS=5
 # Litani dashboard. It can be human-readable and contain spaces if you wish.
 PROOF_UID = Sntp_SendTimeRequest
 
-DEFINES +=
+DEFINES += -DMAX_NO_OF_SERVERS=$(MAX_NO_OF_SERVERS)
 INCLUDES +=
 
 REMOVE_FUNCTION_BODY +=Sntp_SerializeRequest
